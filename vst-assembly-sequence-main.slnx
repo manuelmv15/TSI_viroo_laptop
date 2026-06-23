@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="CustomCode.csproj" />
+  <Project Path="CustomCodeEditor.csproj" />
+</Solution>

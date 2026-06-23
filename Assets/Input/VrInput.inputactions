@@ -1,0 +1,45 @@
+{
+    "name": "VrInput",
+    "maps": [
+        {
+            "name": "Reset",
+            "id": "f87b94d7-4581-4360-b2fd-7723f068b44c",
+            "actions": [
+                {
+                    "name": "Reset",
+                    "type": "Button",
+                    "id": "69085ba0-2cbc-4707-9efa-dff256196cea",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "643a8048-31fc-4357-bdc9-4812790f3d52",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c4d2adf-b43f-48fd-923b-42f7cc47867e",
+                    "path": "<Keyboard>/f8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Reset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

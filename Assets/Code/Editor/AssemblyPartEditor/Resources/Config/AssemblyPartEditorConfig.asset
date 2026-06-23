@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd195aab06ae9c4b86b74f6ab5bb96c, type: 3}
+  m_Name: AssemblyPartEditorConfig
+  m_EditorClassIdentifier: 
+  assemblyTargetCompletableSM: {fileID: 11400000, guid: a6b312119874bec4bb3b9cfe78cbd5a0,
+    type: 2}
+  partsSectionBackground: {r: 0.11774, g: 0.14900202, b: 0.203, a: 1}
+  partTargetsSectionBackground: {r: 0.29607207, g: 0.21854351, b: 0.31446534, a: 1}
+  partListItemColor: {r: 0.18563218, g: 0.27356324, b: 0.425, a: 1}
+  partTargetListItemColor: {r: 0.5031446, g: 0.40662944, b: 0.5028837, a: 1}
+  partFeedbackMaterial: {fileID: 2100000, guid: 94915002fb9d1a7459142ddaa8dbc75d,
+    type: 2}
+  startFeedbackMaterial: {fileID: 2100000, guid: cfd2f119c0a17ce44bfcbf65e2800f3f,
+    type: 2}
+  targetFeedbackMaterial: {fileID: 2100000, guid: 7f576d6160d59224181e6027cb8df87d,
+    type: 2}
+  targetFeedbackHoverMaterial: {fileID: 2100000, guid: a3a979584a3e8ef4e8a9d2525c459ae4,
+    type: 2}
+  lastAssemblyGroupGlobalId: GlobalObjectId_V1-2-4b6a039f17b01cd488d824e355f0d406-141077267-0
