@@ -17,4 +17,9 @@ public class ComponentSelector : MonoBehaviour
     {
         infoUI?.Mostrar(data, origin);
     }
+
+    public void CerrarPanel()
+    {
+        infoUI?.Cerrar();
+    }
 }

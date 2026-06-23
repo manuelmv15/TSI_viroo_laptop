@@ -29,19 +29,23 @@ public class InteractableComponent : XRGrabInteractable
     {
         base.OnHoverEntered(args);
         ApplyHighlight(true);
+        // Mostrar info al apuntar, no al agarrar
+        ComponentSelector.Instance?.OnComponentSelected(data, transform);
     }
 
     protected override void OnHoverExited(HoverExitEventArgs args)
     {
         base.OnHoverExited(args);
         ApplyHighlight(false);
+        ComponentSelector.Instance?.CerrarPanel();
     }
 
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
         OnSelected?.Invoke(data);
-        ComponentSelector.Instance?.OnComponentSelected(data, transform);
+        // Panel se cierra al agarrar para no bloquear la vista
+        ComponentSelector.Instance?.CerrarPanel();
     }
 
     private void ApplyHighlight(bool on)
