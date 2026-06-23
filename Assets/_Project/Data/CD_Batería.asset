@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68217c75135b33d40b8ebe18ddb0a420, type: 3}
+  m_Name: "CD_Bater\xEDa"
+  m_EditorClassIdentifier: 
+  nombre: "Bater\xEDa"
+  funcion: "Suministra energ\xEDa el\xE9ctrica portable a todos los componentes de
+    la laptop cuando no est\xE1 conectada a la red."
+  caracteristicas: "Capacidad en Wh o mAh, voltaje nominal 10.8V-15.4V, tecnolog\xEDa
+    Li-Ion o Li-Polymer, ciclos de carga 300-1000"
+  compatibilidad: "Debe coincidir en voltaje, conector y dimensiones f\xEDsicas con
+    el modelo espec\xEDfico de laptop"
+  clipAudioNarracion: {fileID: 0}
+  iconoUI: {fileID: 0}
+  ordenEnsamblaje: 5

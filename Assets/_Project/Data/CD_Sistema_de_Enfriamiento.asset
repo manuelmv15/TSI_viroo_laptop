@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68217c75135b33d40b8ebe18ddb0a420, type: 3}
+  m_Name: CD_Sistema_de_Enfriamiento
+  m_EditorClassIdentifier: 
+  nombre: Sistema de Enfriamiento
+  funcion: "Disipa el calor generado por el CPU y GPU para mantener temperaturas
+    de operaci\xF3n seguras y estables."
+  caracteristicas: "Ventilador(es) de cobre o aluminio, heatpipes de transferencia
+    t\xE9rmica, pasta t\xE9rmica, control PWM de velocidad"
+  compatibilidad: "Debe ajustarse al chasis del modelo espec\xEDfico y al TDP del
+    procesador instalado"
+  clipAudioNarracion: {fileID: 0}
+  iconoUI: {fileID: 0}
+  ordenEnsamblaje: 4

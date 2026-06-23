@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68217c75135b33d40b8ebe18ddb0a420, type: 3}
+  m_Name: CD_Pantalla
+  m_EditorClassIdentifier: 
+  nombre: Pantalla
+  funcion: "Muestra la salida visual del sistema al usuario. Es la interfaz principal
+    de visualizaci\xF3n de la laptop."
+  caracteristicas: "Resoluci\xF3n Full HD o superior, tipo de panel LCD/IPS/OLED,
+    tasa de refresco 60-144 Hz, retroiluminaci\xF3n LED"
+  compatibilidad: Depende del conector de video (LVDS/eDP) y el controlador de pantalla
+    integrado en la tarjeta madre
+  clipAudioNarracion: {fileID: 0}
+  iconoUI: {fileID: 0}
+  ordenEnsamblaje: 8

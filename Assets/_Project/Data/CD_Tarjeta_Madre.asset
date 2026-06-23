@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68217c75135b33d40b8ebe18ddb0a420, type: 3}
+  m_Name: CD_Tarjeta_Madre
+  m_EditorClassIdentifier: 
+  nombre: Tarjeta Madre
+  funcion: "Conecta e integra todos los componentes del sistema, distribuyendo datos
+    y energ\xEDa entre ellos."
+  caracteristicas: Socket de CPU, slots de RAM DDR4/DDR5, conectores M.2 y SATA,
+    chipset integrado, puertos de E/S
+  compatibilidad: "Define qu\xE9 generaci\xF3n de CPU, tipo y velocidad de RAM, y
+    est\xE1ndares de almacenamiento soporta"
+  clipAudioNarracion: {fileID: 0}
+  iconoUI: {fileID: 0}
+  ordenEnsamblaje: 1

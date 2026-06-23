@@ -1,4 +1,7 @@
 ﻿<Solution>
   <Project Path="CustomCode.csproj" />
   <Project Path="CustomCodeEditor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.Editor.csproj" />
+  <Project Path="Unity.XR.Interaction.Toolkit.Samples.InteractionSimulator.csproj" />
 </Solution>
