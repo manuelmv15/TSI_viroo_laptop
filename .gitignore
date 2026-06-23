@@ -80,6 +80,15 @@ UserSettings
 experimental code
 
 ## Proyecto Laptop — archivos generados / no necesarios
+# Archivos eliminados del tracking (siguen en disco por si acaso)
+Assets/3DModels/Engine/
+Assets/Scenes/Demo.unity
+Assets/Scenes/Demo.unity.meta
+Assets/Scenes/Demo/
+Assets/Scenes/CharacterMovementTest.unity
+Assets/Scenes/CharacterMovementTest.unity.meta
+
+
 # Base de datos de Visual Scripting (se regenera sola, 74 MB)
 /[Aa]ssets/[Uu]nity.[Vv]isual[Ss]cripting.[Gg]enerated/
 
