@@ -78,3 +78,15 @@ crashlytics-build.properties
 .sonarqube/
 UserSettings
 experimental code
+
+## Proyecto Laptop — archivos generados / no necesarios
+# Base de datos de Visual Scripting (se regenera sola, 74 MB)
+/[Aa]ssets/[Uu]nity.[Vv]isual[Ss]cripting.[Gg]enerated/
+
+# Screenshots de desarrollo
+/[Aa]ssets/[Ss]creenshots/
+/[Aa]ssets/[Ss]creenshots.meta
+
+# Samples importados de paquetes (se reimportan desde Package Manager)
+/[Aa]ssets/[Ss]amples/[Xx][Rr] [Ii]nteraction [Tt]oolkit/
+/[Aa]ssets/[Ss]amples/[Xx][Rr] [Ii]nteraction [Tt]oolkit.meta
