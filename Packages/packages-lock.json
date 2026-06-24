@@ -30,7 +30,7 @@
     },
     "com.cysharp.unitask": {
       "version": "2.5.10",
-      "depth": 3,
+      "depth": 4,
       "source": "registry",
       "dependencies": {},
       "url": "https://package.openupm.com"
@@ -103,11 +103,12 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.cinemachine": {
-      "version": "2.10.7",
+      "version": "3.1.5",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.test-framework": "1.1.31"
+        "com.unity.splines": "2.0.0",
+        "com.unity.modules.imgui": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -189,7 +190,7 @@
     },
     "com.unity.postprocessing": {
       "version": "3.5.4",
-      "depth": 1,
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.imgui": "1.0.0",
@@ -268,7 +269,7 @@
     },
     "com.unity.services.core": {
       "version": "1.16.0",
-      "depth": 4,
+      "depth": 5,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.androidjni": "1.0.0",
@@ -279,7 +280,7 @@
     },
     "com.unity.services.vivox": {
       "version": "16.10.0",
-      "depth": 3,
+      "depth": 4,
       "source": "registry",
       "dependencies": {
         "com.unity.modules.audio": "1.0.0",
@@ -290,8 +291,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.settings-manager": {
-      "version": "2.1.0",
-      "depth": 1,
+      "version": "2.1.1",
+      "depth": 2,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -304,6 +305,17 @@
         "com.unity.render-pipelines.core": "17.0.4",
         "com.unity.searcher": "4.9.3"
       }
+    },
+    "com.unity.splines": {
+      "version": "2.8.4",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.mathematics": "1.2.1",
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.settings-manager": "1.0.3"
+      },
+      "url": "https://packages.unity.com"
     },
     "com.unity.test-framework": {
       "version": "1.6.0",
@@ -406,8 +418,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.interaction.toolkit": {
-      "version": "3.2.1",
-      "depth": 0,
+      "version": "3.3.0",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
         "com.unity.ugui": "1.0.0",
@@ -422,11 +434,10 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.12",
+      "version": "3.0.0",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.unity.modules.vr": "1.0.0",
         "com.unity.modules.xr": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -457,480 +468,602 @@
       "url": "https://packages.unity.com"
     },
     "com.viroo": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.annulusgames.lit-motion": "2.0.1",
-        "com.unity.animation.rigging": "1.3.0",
-        "com.unity.inputsystem": "1.14.0",
+        "com.unity.animation.rigging": "1.4.0",
+        "com.unity.inputsystem": "1.18.0",
         "com.unity.shadergraph": "12.1.6",
         "com.unity.vectorgraphics": "2.0.0-preview.25",
-        "com.unity.xr.hands": "1.5.1",
-        "com.unity.xr.interaction.toolkit": "3.1.2",
-        "com.unity.xr.legacyinputhelpers": "2.1.12",
-        "com.unity.xr.management": "4.5.1",
-        "com.unity.xr.openxr": "1.14.3",
-        "com.viroo.shared.arena.native": "3.0.472",
-        "com.viroo.shared.communication.protocols.signalr": "3.0.472",
-        "com.viroo.shared.communication.serialization.json": "3.0.472",
-        "com.viroo.shared.communication.unity": "3.0.472",
-        "com.viroo.shared.library": "3.0.472",
-        "com.viroo.shared.library.content": "3.0.472",
-        "com.viroo.shared.library.sessions.core": "3.0.472",
-        "com.viroo.shared.library.sourcegenerators": "3.0.472",
-        "com.viroo.shared.metadata.applications": "3.0.472",
-        "com.viroo.shared.sessions.unity": "3.0.472",
+        "com.unity.xr.hands": "1.7.2",
+        "com.unity.xr.interaction.toolkit": "3.3.0",
+        "com.unity.xr.legacyinputhelpers": "3.0.0",
+        "com.unity.xr.management": "4.5.3",
+        "com.unity.xr.openxr": "1.16.1",
+        "com.viroo.shared.arena.native": "3.1.474",
+        "com.viroo.shared.communication.protocols.signalr": "3.1.474",
+        "com.viroo.shared.communication.serialization.json": "3.1.474",
+        "com.viroo.shared.communication.unity": "3.1.474",
+        "com.viroo.shared.library": "3.1.474",
+        "com.viroo.shared.library.content": "3.1.474",
+        "com.viroo.shared.library.sessions.core": "3.1.474",
+        "com.viroo.shared.library.sourcegenerators": "3.1.474",
+        "com.viroo.shared.metadata.applications": "3.1.474",
+        "com.viroo.shared.sessions.unity": "3.1.474",
         "com.virtualware.bootstrap": "2.2.8",
         "com.virtualware.cache": "2.2.8",
         "com.virtualware.extensions.unity": "2.2.8",
         "com.virtualware.localization.default": "2.2.8",
         "com.virtualware.localization.resx": "2.2.8",
         "com.virtualware.localization.textmeshpro": "2.2.8",
-        "com.virtualware.networking": "3.0.522",
+        "com.virtualware.networking": "3.1.254",
         "com.virtualware.pooling": "2.2.8",
         "com.virtualware.rest.net": "2.2.8",
         "com.virtualware.serialization.json": "2.2.8",
         "com.virtualware.tickable": "2.2.8",
+        "com.virtualware.time": "2.2.8",
         "com.virtualware.utilities": "2.2.8",
-        "org.nuget.keepachangelogparser": "1.2.7",
+        "org.nuget.keepachangelogparser": "2.0.1",
         "org.nuget.serilog.expressions": "5.0.0",
-        "org.nuget.serilog.extensions.hosting": "9.0.0",
-        "org.nuget.serilog.settings.configuration": "9.0.0",
+        "org.nuget.serilog.extensions.hosting": "10.0.0",
+        "org.nuget.serilog.settings.configuration": "10.0.0",
         "org.nuget.serilog.sinks.file": "7.0.0"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.interactions": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 2,
       "source": "registry",
       "dependencies": {
-        "com.unity.timeline": "1.8.8",
-        "com.viroo": "3.0.522"
+        "com.unity.timeline": "1.8.10",
+        "com.viroo": "3.1.254"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.sceneloader": {
-      "version": "3.0.522",
-      "depth": 1,
+      "version": "3.1.254",
+      "depth": 2,
       "source": "registry",
       "dependencies": {
-        "com.unity.postprocessing": "3.4.0",
-        "com.viroo.sceneloader.scenecontext": "3.0.522",
-        "com.viroo.sceneloader.scenepublisher": "3.0.522",
-        "com.viroo.interactions": "3.0.522",
-        "com.viroo.vivox": "3.0.522",
+        "com.unity.postprocessing": "3.5.1",
+        "com.viroo.sceneloader.scenecontext": "3.1.254",
+        "com.viroo.sceneloader.scenepublisher": "3.1.254",
+        "com.viroo.interactions": "3.1.254",
+        "com.viroo.vivox": "3.1.254",
         "com.virtualware.download": "2.2.8",
         "com.virtualware.download.unity": "2.2.8"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.sceneloader.applicationpublisher": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.viroo.sceneloader.scenepublisher": "3.0.522"
+        "com.viroo.sceneloader.scenepublisher": "3.1.254",
+        "com.viroo.shared.content.applications": "3.1.474",
+        "com.viroo.shared.content.fileuploader": "3.1.474",
+        "org.nuget.bouncycastle.cryptography": "2.6.2"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.sceneloader.bootstrap.mock": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.viroo.interactions": "3.0.522",
-        "com.viroo.tracking.nmerso": "3.0.522",
-        "com.viroo.sceneloader.scenecontext": "3.0.522"
+        "com.viroo.interactions": "3.1.254",
+        "com.viroo.tracking.nmerso": "3.1.254",
+        "com.viroo.sceneloader": "3.1.254"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.sceneloader.scenecontext": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 2,
       "source": "registry",
       "dependencies": {
-        "com.viroo": "3.0.522",
-        "com.viroo.shared.communication.sceneloader.unity": "3.0.472"
+        "com.viroo": "3.1.254",
+        "com.viroo.shared.communication.sceneloader.unity": "3.1.474"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.sceneloader.scenepublisher": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 1,
       "source": "registry",
       "dependencies": {
-        "com.unity.settings-manager": "2.1.0",
-        "com.viroo.sceneloader.scenecontext": "3.0.522",
-        "org.nuget.sharpyaml": "2.1.2"
+        "com.unity.settings-manager": "2.1.1",
+        "com.viroo.sceneloader.scenecontext": "3.1.254",
+        "org.nuget.sharpyaml": "2.1.4"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.arena": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.testableio.system.io.abstractions": "22.0.14"
+        "org.nuget.testableio.system.io.abstractions": "22.1.0"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.arena.native": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.arena": "3.0.472",
-        "org.nuget.system.text.json": "9.0.5",
-        "org.nuget.testableio.system.io.abstractions.wrappers": "22.0.14",
+        "com.viroo.shared.arena": "3.1.474",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.testableio.system.io.abstractions.wrappers": "22.1.0",
         "org.nuget.system.security.accesscontrol": "6.0.1",
-        "org.nuget.testableio.system.io.abstractions": "22.0.14"
+        "org.nuget.testableio.system.io.abstractions": "22.1.0"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.arena.nmerso": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 3,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.arena": "3.0.472",
-        "org.nuget.testableio.system.io.abstractions.wrappers": "22.0.14",
+        "com.viroo.shared.arena": "3.1.474",
+        "org.nuget.testableio.system.io.abstractions.wrappers": "22.1.0",
         "org.nuget.system.security.accesscontrol": "6.0.1",
-        "org.nuget.testableio.system.io.abstractions": "22.0.14"
+        "org.nuget.testableio.system.io.abstractions": "22.1.0"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.communication": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.communication.core": "3.0.472",
-        "com.viroo.shared.library.core": "3.0.472",
+        "com.viroo.shared.communication.core": "3.1.474",
+        "com.viroo.shared.library.core": "3.1.474",
         "org.nuget.environmentabstractions": "5.0.0",
-        "org.nuget.fluentresults": "3.16.0",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.http": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.5",
-        "org.nuget.serilog": "4.3.0",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.serilog": "4.3.1",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.communication.core": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 6,
       "source": "registry",
       "dependencies": {},
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.communication.protocols.signalr": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.communication": "3.0.472",
-        "org.nuget.microsoft.aspnetcore.signalr.client": "9.0.5",
+        "com.viroo.shared.communication": "3.1.474",
+        "org.nuget.microsoft.aspnetcore.signalr.client": "10.0.5",
         "org.nuget.environmentabstractions": "5.0.0",
-        "org.nuget.fluentresults": "3.16.0",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.http": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.5",
-        "org.nuget.serilog": "4.3.0",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.bcl.timeprovider": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.serilog": "4.3.1",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.communication.sceneloader.unity": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 3,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.communication.unity": "3.0.472",
-        "com.viroo.shared.metadata.scenes": "3.0.472",
-        "org.nuget.system.text.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.sharpyaml": "2.1.2"
+        "com.viroo.shared.communication.unity": "3.1.474",
+        "com.viroo.shared.metadata.scenes": "3.1.474",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.sharpyaml": "3.5.0"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.communication.serialization.json": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.communication": "3.0.472",
-        "org.nuget.system.text.json": "9.0.5",
+        "com.viroo.shared.communication": "3.1.474",
+        "org.nuget.system.text.json": "10.0.5",
         "org.nuget.environmentabstractions": "5.0.0",
-        "org.nuget.fluentresults": "3.16.0",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.http": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.5",
-        "org.nuget.serilog": "4.3.0"
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.serilog": "4.3.1"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.communication.unity": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.system.text.json": "10.0.5"
+      },
+      "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
+    },
+    "com.viroo.shared.content.applications": {
+      "version": "3.1.474",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.viroo.shared.content.encryption.applications": "3.1.474",
+        "com.viroo.shared.library.identity": "3.1.474",
+        "com.viroo.shared.metadata.applications": "3.1.474",
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.testableio.system.io.abstractions.wrappers": "22.1.0",
+        "org.nuget.duende.identitymodel.oidcclient": "7.1.0",
+        "org.nuget.environmentabstractions": "5.0.0",
+        "org.nuget.microsoft.bcl.timeprovider": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.microsoft.identitymodel.jsonwebtokens": "8.17.0",
+        "org.nuget.serilog": "4.3.1",
+        "org.nuget.sharpyaml": "3.5.0",
+        "org.nuget.system.security.accesscontrol": "6.0.1",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.testableio.system.io.abstractions": "22.1.0"
+      },
+      "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
+    },
+    "com.viroo.shared.content.encryption": {
+      "version": "3.1.474",
+      "depth": 4,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5"
+      },
+      "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
+    },
+    "com.viroo.shared.content.encryption.applications": {
+      "version": "3.1.474",
+      "depth": 3,
+      "source": "registry",
+      "dependencies": {
+        "com.viroo.shared.content.encryption": "3.1.474",
+        "com.viroo.shared.library.applications": "3.1.474",
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.sharpyaml": "3.5.0",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.testableio.system.io.abstractions": "22.1.0"
+      },
+      "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
+    },
+    "com.viroo.shared.content.fileuploader": {
+      "version": "3.1.474",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {
+        "com.viroo.shared.library.core": "3.1.474",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.progressstream": "1.2.0",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.environmentabstractions": "5.0.0",
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.serilog": "4.3.1"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.library": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.library.core": "3.0.472",
-        "com.viroo.shared.library.serialization": "3.0.472",
+        "com.viroo.shared.library.core": "3.1.474",
+        "com.viroo.shared.library.serialization": "3.1.474",
         "org.nuget.commandlineparser": "2.9.1",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.localization.abstractions": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5",
-        "org.nuget.testableio.system.io.abstractions.wrappers": "22.0.14",
+        "org.nuget.communitytoolkit.mvvm": "8.4.2",
+        "org.nuget.microsoft.bcl.timeprovider": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.localization.abstractions": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.testableio.system.io.abstractions.wrappers": "22.1.0",
         "org.nuget.environmentabstractions": "5.0.0",
-        "org.nuget.fluentresults": "3.16.0",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.http": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.5",
-        "org.nuget.serilog": "4.3.0",
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.serilog": "4.3.1",
         "org.nuget.system.security.accesscontrol": "6.0.1"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
-    "com.viroo.shared.library.content": {
-      "version": "3.0.472",
+    "com.viroo.shared.library.applications": {
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.library.identity": "3.0.472",
+        "com.viroo.shared.metadata.applications": "3.1.474",
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.testableio.system.io.abstractions": "22.1.0",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.sharpyaml": "3.5.0",
+        "org.nuget.system.text.json": "10.0.5"
+      },
+      "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
+    },
+    "com.viroo.shared.library.content": {
+      "version": "3.1.474",
+      "depth": 4,
+      "source": "registry",
+      "dependencies": {
+        "com.viroo.shared.library.identity": "3.1.474",
         "org.nuget.progressstream": "1.2.0",
-        "org.nuget.testableio.system.io.abstractions": "22.0.14",
+        "org.nuget.testableio.system.io.abstractions": "22.1.0",
         "org.nuget.webdav.client": "2.9.0",
-        "org.nuget.duende.identitymodel.oidcclient": "6.0.1",
+        "org.nuget.duende.identitymodel.oidcclient": "7.1.0",
         "org.nuget.environmentabstractions": "5.0.0",
-        "org.nuget.fluentresults": "3.16.0",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.http": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.5",
-        "org.nuget.microsoft.identitymodel.jsonwebtokens": "8.12.0",
-        "org.nuget.serilog": "4.3.0",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.bcl.timeprovider": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.microsoft.identitymodel.jsonwebtokens": "8.17.0",
+        "org.nuget.serilog": "4.3.1",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.library.core": {
-      "version": "3.0.472",
-      "depth": 5,
+      "version": "3.1.474",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "org.nuget.environmentabstractions": "5.0.0",
-        "org.nuget.fluentresults": "3.16.0",
-        "org.nuget.microsoft.extensions.hosting": "9.0.5",
-        "org.nuget.microsoft.extensions.http": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.5",
-        "org.nuget.serilog": "4.3.0",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.serilog": "4.3.1",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.library.identity": {
-      "version": "3.0.472",
-      "depth": 5,
+      "version": "3.1.474",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.library.core": "3.0.472",
-        "com.viroo.shared.library.identity.core": "3.0.472",
-        "com.viroo.shared.library.serialization": "3.0.472",
-        "org.nuget.duende.identitymodel.oidcclient": "6.0.1",
-        "org.nuget.microsoft.extensions.hosting": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.5",
-        "org.nuget.microsoft.identitymodel.jsonwebtokens": "8.12.0",
+        "com.viroo.shared.library.core": "3.1.474",
+        "com.viroo.shared.library.identity.core": "3.1.474",
+        "com.viroo.shared.library.serialization": "3.1.474",
+        "org.nuget.duende.identitymodel.oidcclient": "7.1.0",
+        "org.nuget.microsoft.extensions.hosting": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.5",
+        "org.nuget.microsoft.identitymodel.jsonwebtokens": "8.17.0",
         "org.nuget.environmentabstractions": "5.0.0",
-        "org.nuget.fluentresults": "3.16.0",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.http": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.serilog": "4.3.0",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.fluentresults": "4.0.0",
+        "org.nuget.microsoft.bcl.timeprovider": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.http": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.serilog": "4.3.1",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.library.identity.core": {
-      "version": "3.0.472",
-      "depth": 6,
+      "version": "3.1.474",
+      "depth": 4,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "org.nuget.system.text.json": "10.0.5"
+      },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.library.serialization": {
-      "version": "3.0.472",
-      "depth": 5,
+      "version": "3.1.474",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5"
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.library.sessions.core": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {},
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.library.sourcegenerators": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {},
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.metadata": {
-      "version": "3.0.472",
-      "depth": 5,
+      "version": "3.1.474",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.sharpyaml": "2.1.2",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5"
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.sharpyaml": "3.5.0",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.metadata.applications": {
-      "version": "3.0.472",
-      "depth": 4,
+      "version": "3.1.474",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.metadata": "3.0.472",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.sharpyaml": "2.1.2"
+        "com.viroo.shared.metadata": "3.1.474",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.sharpyaml": "3.5.0",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.metadata.scenes": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.metadata": "3.0.472",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.sharpyaml": "2.1.2"
+        "com.viroo.shared.metadata": "3.1.474",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.sharpyaml": "3.5.0",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.shared.sessions.unity": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "com.viroo.shared.communication.unity": "3.0.472",
-        "org.nuget.system.text.json": "9.0.5"
+        "com.viroo.shared.communication.unity": "3.1.474",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.studio": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.ai.navigation": "1.1.6",
-        "com.unity.cinemachine": "2.10.3",
-        "com.unity.postprocessing": "3.4.0",
-        "com.viroo.sceneloader": "3.0.522",
-        "com.viroo.sceneloader.applicationpublisher": "3.0.522",
-        "com.viroo.sceneloader.bootstrap.mock": "3.0.522",
-        "com.viroo.sceneloader.scenepublisher": "3.0.522"
+        "com.unity.ai.navigation": "2.0.9",
+        "com.unity.cinemachine": "3.1.5",
+        "com.viroo.sceneloader.applicationpublisher": "3.1.254",
+        "com.viroo.sceneloader.bootstrap.mock": "3.1.254",
+        "com.viroo.sceneloader.scenepublisher": "3.1.254"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
@@ -954,13 +1087,13 @@
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.tracking.nmerso": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 2,
       "source": "registry",
       "dependencies": {
         "com.nmerso": "2.4.561",
-        "com.viroo": "3.0.522",
-        "com.viroo.shared.arena.nmerso": "3.0.472"
+        "com.viroo": "3.1.254",
+        "com.viroo.shared.arena.nmerso": "3.1.474"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
@@ -975,12 +1108,12 @@
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
     "com.viroo.vivox": {
-      "version": "3.0.522",
-      "depth": 2,
+      "version": "3.1.254",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "com.unity.services.vivox": "16.6.0",
-        "com.viroo": "3.0.522"
+        "com.unity.services.vivox": "16.8.0",
+        "com.viroo": "3.1.254"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
@@ -1052,7 +1185,7 @@
     },
     "com.virtualware.download": {
       "version": "2.2.8",
-      "depth": 2,
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.cysharp.unitask": "2.5.10"
@@ -1061,7 +1194,7 @@
     },
     "com.virtualware.download.unity": {
       "version": "2.2.8",
-      "depth": 2,
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "com.cysharp.unitask": "2.5.10",
@@ -1177,25 +1310,25 @@
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.networking": {
-      "version": "3.0.522",
+      "version": "3.1.254",
       "depth": 4,
       "source": "registry",
       "dependencies": {
         "com.cysharp.unitask": "2.5.10",
-        "com.unity.profiling.core": "1.0.2",
+        "com.unity.profiling.core": "1.0.3",
         "com.virtualware.dependencyinjection": "2.2.8",
         "com.virtualware.dependencyinjection.multiscene": "2.2.8",
         "com.virtualware.hosting": "2.2.8",
         "com.virtualware.serialization.json": "2.2.8",
-        "com.virtualware.shared.networking.protocols.signalr": "3.0.472",
-        "com.virtualware.shared.networking.protocols.socket": "3.0.472",
-        "com.virtualware.shared.networking.serialization.binary": "3.0.472",
-        "com.virtualware.shared.networking.serialization.protobuf": "3.0.472",
-        "com.virtualware.shared.networking.server.mock": "3.0.472",
+        "com.virtualware.shared.networking.protocols.signalr": "3.1.474",
+        "com.virtualware.shared.networking.protocols.socket": "3.1.474",
+        "com.virtualware.shared.networking.serialization.binary": "3.1.474",
+        "com.virtualware.shared.networking.serialization.protobuf": "3.1.474",
+        "com.virtualware.shared.networking.server.mock": "3.1.474",
         "com.virtualware.tickable": "2.2.8",
         "org.nuget.communitytoolkit.mvvm": "8.4.0",
-        "org.nuget.microsoft.extensions.options.dataannotations": "9.0.6",
-        "org.nuget.system.io.abstractions": "22.0.14"
+        "org.nuget.microsoft.extensions.options.dataannotations": "10.0.1",
+        "org.nuget.system.io.abstractions": "22.1.0"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo@Release/npm/registry"
     },
@@ -1273,107 +1406,108 @@
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 6,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5"
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking.protocols.signalr": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "com.virtualware.shared.networking.protocols.signalr.shared": "3.0.472",
-        "com.virtualware.shared.networking": "3.0.472",
-        "org.nuget.microsoft.aspnetcore.signalr.client": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5"
+        "com.virtualware.shared.networking.protocols.signalr.shared": "3.1.474",
+        "com.virtualware.shared.networking": "3.1.474",
+        "org.nuget.microsoft.aspnetcore.signalr.client": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.bcl.timeprovider": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking.protocols.signalr.shared": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 6,
       "source": "registry",
       "dependencies": {},
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking.protocols.socket": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "com.virtualware.shared.networking": "3.0.472",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5"
+        "com.virtualware.shared.networking": "3.1.474",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking.serialization.binary": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "com.virtualware.shared.networking": "3.0.472",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5"
+        "com.virtualware.shared.networking": "3.1.474",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking.serialization.protobuf": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "com.virtualware.shared.networking": "3.0.472",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.objectpool": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
+        "com.virtualware.shared.networking": "3.1.474",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.objectpool": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
         "org.nuget.microsoft.io.recyclablememorystream": "3.0.1",
         "org.nuget.protobuf-net": "2.4.9",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.system.servicemodel.primitives": "8.1.2"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.system.servicemodel.primitives": "10.0.652802"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking.server.abstractions": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 6,
       "source": "registry",
       "dependencies": {
-        "com.virtualware.shared.networking": "3.0.472",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5"
+        "com.virtualware.shared.networking": "3.1.474",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
     "com.virtualware.shared.networking.server.mock": {
-      "version": "3.0.472",
+      "version": "3.1.474",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "com.virtualware.shared.networking.server.abstractions": "3.0.472",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5"
+        "com.virtualware.shared.networking.server.abstractions": "3.1.474",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5"
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
@@ -1397,6 +1531,16 @@
       },
       "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
     },
+    "com.virtualware.time": {
+      "version": "2.2.8",
+      "depth": 4,
+      "source": "registry",
+      "dependencies": {
+        "com.virtualware.dependencyinjection": "2.2.8",
+        "com.virtualware.tickable": "2.2.8"
+      },
+      "url": "https://pkgs.dev.azure.com/virtualwaregroup/be03201a-56db-4141-a519-e8a5ad855787/_packaging/Viroo/npm/registry"
+    },
     "com.virtualware.utilities": {
       "version": "2.2.8",
       "depth": 4,
@@ -1413,6 +1557,13 @@
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
+    "org.nuget.bouncycastle.cryptography": {
+      "version": "2.6.2",
+      "depth": 2,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://unitynuget-registry.openupm.com"
+    },
     "org.nuget.commandlineparser": {
       "version": "2.9.1",
       "depth": 5,
@@ -1421,54 +1572,55 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.communitytoolkit.mvvm": {
-      "version": "8.4.0",
+      "version": "8.4.2",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "8.0.0",
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.1",
         "org.nuget.system.componentmodel.annotations": "5.0.0",
-        "org.nuget.system.memory": "4.6.0",
-        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.0"
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.csharpfunctionalextensions": {
-      "version": "3.5.1",
+      "version": "3.6.0",
       "depth": 5,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.duende.identitymodel": {
-      "version": "7.0.0",
-      "depth": 6,
+      "version": "8.1.0",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.text.json": "8.0.5"
+        "org.nuget.microsoft.bcl.memory": "10.0.4",
+        "org.nuget.system.text.json": "10.0.4"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.duende.identitymodel.oidcclient": {
-      "version": "6.0.1",
-      "depth": 5,
+      "version": "7.1.0",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.duende.identitymodel": "7.0.0",
-        "org.nuget.microsoft.extensions.logging.abstractions": "8.0.0",
-        "org.nuget.system.text.json": "8.0.5"
+        "org.nuget.duende.identitymodel": "8.1.0",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.4",
+        "org.nuget.system.text.json": "10.0.4"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.environmentabstractions": {
       "version": "5.0.0",
-      "depth": 5,
+      "depth": 3,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.fluentresults": {
-      "version": "3.16.0",
-      "depth": 5,
+      "version": "4.0.0",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "org.nuget.microsoft.extensions.logging.abstractions": "2.1.1",
@@ -1477,535 +1629,546 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.keepachangelogparser": {
-      "version": "1.2.7",
+      "version": "2.0.1",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.csharpfunctionalextensions": "3.5.1"
+        "org.nuget.csharpfunctionalextensions": "3.6.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.aspnetcore.connections.abstractions": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 8,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.features": "9.0.5",
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.system.io.pipelines": "9.0.5"
+        "org.nuget.microsoft.extensions.features": "10.0.5",
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.system.io.pipelines": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.aspnetcore.http.connections.client": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 6,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.aspnetcore.http.connections.common": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.net.serversentevents": "9.0.5"
+        "org.nuget.microsoft.aspnetcore.http.connections.common": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.net.serversentevents": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.aspnetcore.http.connections.common": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 7,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.aspnetcore.connections.abstractions": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.microsoft.aspnetcore.connections.abstractions": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.aspnetcore.signalr.client": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.aspnetcore.signalr.client.core": "9.0.5",
-        "org.nuget.microsoft.aspnetcore.http.connections.client": "9.0.5"
+        "org.nuget.microsoft.aspnetcore.signalr.client.core": "10.0.5",
+        "org.nuget.microsoft.aspnetcore.http.connections.client": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.aspnetcore.signalr.client.core": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 6,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.aspnetcore.signalr.protocols.json": "9.0.5",
-        "org.nuget.microsoft.aspnetcore.signalr.common": "9.0.5",
-        "org.nuget.microsoft.bcl.timeprovider": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.system.threading.channels": "9.0.5"
+        "org.nuget.microsoft.aspnetcore.signalr.protocols.json": "10.0.5",
+        "org.nuget.microsoft.aspnetcore.signalr.common": "10.0.5",
+        "org.nuget.microsoft.bcl.timeprovider": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.system.threading.channels": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.aspnetcore.signalr.common": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 7,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.aspnetcore.connections.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.microsoft.aspnetcore.connections.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.aspnetcore.signalr.protocols.json": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 7,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.aspnetcore.signalr.common": "9.0.5"
+        "org.nuget.microsoft.aspnetcore.signalr.common": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.bcl.asyncinterfaces": {
-      "version": "9.0.6",
-      "depth": 7,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
+      },
+      "url": "https://unitynuget-registry.openupm.com"
+    },
+    "org.nuget.microsoft.bcl.memory": {
+      "version": "10.0.4",
+      "depth": 5,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.bcl.timeprovider": {
-      "version": "9.0.5",
-      "depth": 7,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.primitives": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.primitives": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration.abstractions": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.primitives": "9.0.5"
+        "org.nuget.microsoft.extensions.primitives": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration.binder": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration.commandline": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration.environmentvariables": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration.fileextensions": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.physical": "9.0.5",
-        "org.nuget.microsoft.extensions.primitives": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.physical": "10.0.5",
+        "org.nuget.microsoft.extensions.primitives": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration.json": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.fileextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.abstractions": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.fileextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.abstractions": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.configuration.usersecrets": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.physical": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.physical": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.dependencyinjection": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.dependencyinjection.abstractions": {
-      "version": "9.0.6",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.6",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.dependencymodel": {
-      "version": "9.0.0",
+      "version": "10.0.0",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.text.encodings.web": "9.0.0",
-        "org.nuget.system.text.json": "9.0.0",
-        "org.nuget.system.buffers": "4.5.1",
-        "org.nuget.system.memory": "4.5.5"
+        "org.nuget.system.text.encodings.web": "10.0.0",
+        "org.nuget.system.text.json": "10.0.0",
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.memory": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.diagnostics": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.diagnostics.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.diagnostics.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.diagnostics.abstractions": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.diagnostics.diagnosticsource": "9.0.5",
-        "org.nuget.system.buffers": "4.5.1",
-        "org.nuget.system.memory": "4.5.5"
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.diagnostics.diagnosticsource": "10.0.5",
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.memory": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.features": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 9,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.fileproviders.abstractions": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.primitives": "9.0.5"
+        "org.nuget.microsoft.extensions.primitives": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.fileproviders.physical": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.fileproviders.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.filesystemglobbing": "9.0.5",
-        "org.nuget.microsoft.extensions.primitives": "9.0.5"
+        "org.nuget.microsoft.extensions.fileproviders.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.filesystemglobbing": "10.0.5",
+        "org.nuget.microsoft.extensions.primitives": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.filesystemglobbing": {
-      "version": "9.0.5",
-      "depth": 7,
+      "version": "10.0.5",
+      "depth": 5,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.hosting": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.binder": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.commandline": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.environmentvariables": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.fileextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.json": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.usersecrets": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.diagnostics": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.physical": "9.0.5",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.console": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.debug": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.eventlog": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.eventsource": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.binder": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.commandline": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.environmentvariables": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.fileextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.json": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.usersecrets": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.diagnostics": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.physical": "10.0.5",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.console": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.debug": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.eventlog": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.eventsource": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.hosting.abstractions": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.diagnostics.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.fileproviders.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.diagnostics.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.fileproviders.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.http": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.localization.abstractions": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 5,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.logging": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.diagnostics.diagnosticsource": "9.0.5"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.diagnostics.diagnosticsource": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.logging.abstractions": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.system.diagnostics.diagnosticsource": "9.0.5",
-        "org.nuget.system.buffers": "4.5.1",
-        "org.nuget.system.memory": "4.5.5"
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.system.diagnostics.diagnosticsource": "10.0.5",
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.memory": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.logging.configuration": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.binder": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.options.configurationextensions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.binder": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.options.configurationextensions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.logging.console": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.configuration": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5",
-        "org.nuget.system.buffers": "4.5.1"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.configuration": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.system.buffers": "4.6.1"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.logging.debug": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5"
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.logging.eventlog": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.system.diagnostics.eventlog": "9.0.5"
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.system.diagnostics.eventlog": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.logging.eventsource": {
-      "version": "9.0.5",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.logging": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.primitives": "9.0.5",
-        "org.nuget.system.text.json": "9.0.5",
-        "org.nuget.system.memory": "4.5.5",
-        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.logging": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.primitives": "10.0.5",
+        "org.nuget.system.text.json": "10.0.5",
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.objectpool": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 6,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.options": {
-      "version": "9.0.6",
-      "depth": 6,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.6",
-        "org.nuget.microsoft.extensions.primitives": "9.0.6",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.primitives": "10.0.5",
         "org.nuget.system.componentmodel.annotations": "5.0.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.options.configurationextensions": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.configuration.binder": "9.0.5",
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.5",
-        "org.nuget.microsoft.extensions.options": "9.0.5",
-        "org.nuget.microsoft.extensions.primitives": "9.0.5"
+        "org.nuget.microsoft.extensions.configuration.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.configuration.binder": "10.0.5",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
+        "org.nuget.microsoft.extensions.primitives": "10.0.5"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.options.dataannotations": {
-      "version": "9.0.6",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.6",
-        "org.nuget.microsoft.extensions.options": "9.0.6",
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.5",
+        "org.nuget.microsoft.extensions.options": "10.0.5",
         "org.nuget.system.componentmodel.annotations": "5.0.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.extensions.primitives": {
-      "version": "9.0.6",
-      "depth": 7,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.memory": "4.5.5",
-        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.identitymodel.abstractions": {
-      "version": "8.12.0",
-      "depth": 8,
+      "version": "8.17.0",
+      "depth": 6,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.identitymodel.jsonwebtokens": {
-      "version": "8.12.0",
-      "depth": 5,
+      "version": "8.17.0",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.identitymodel.tokens": "8.12.0",
+        "org.nuget.microsoft.identitymodel.tokens": "8.17.0",
         "org.nuget.microsoft.bcl.timeprovider": "8.0.1"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.identitymodel.logging": {
-      "version": "8.12.0",
-      "depth": 7,
+      "version": "8.17.0",
+      "depth": 5,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.identitymodel.abstractions": "8.12.0"
+        "org.nuget.microsoft.identitymodel.abstractions": "8.17.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.microsoft.identitymodel.tokens": {
-      "version": "8.12.0",
-      "depth": 6,
+      "version": "8.17.0",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.identitymodel.logging": "8.12.0",
+        "org.nuget.microsoft.identitymodel.logging": "8.17.0",
         "org.nuget.microsoft.bcl.timeprovider": "8.0.1",
         "org.nuget.microsoft.extensions.logging.abstractions": "2.1.0",
         "org.nuget.system.diagnostics.diagnosticsource": "6.0.2",
@@ -2025,7 +2188,7 @@
     },
     "org.nuget.progressstream": {
       "version": "1.2.0",
-      "depth": 5,
+      "depth": 3,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
@@ -2043,8 +2206,8 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.serilog": {
-      "version": "4.3.0",
-      "depth": 5,
+      "version": "4.3.1",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.diagnostics.diagnosticsource": "8.0.1",
@@ -2062,36 +2225,36 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.serilog.extensions.hosting": {
-      "version": "9.0.0",
+      "version": "10.0.0",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "9.0.0",
-        "org.nuget.microsoft.extensions.hosting.abstractions": "9.0.0",
-        "org.nuget.microsoft.extensions.logging.abstractions": "9.0.0",
-        "org.nuget.serilog": "4.2.0",
-        "org.nuget.serilog.extensions.logging": "9.0.0"
+        "org.nuget.microsoft.extensions.dependencyinjection.abstractions": "10.0.0",
+        "org.nuget.microsoft.extensions.hosting.abstractions": "10.0.0",
+        "org.nuget.microsoft.extensions.logging.abstractions": "10.0.0",
+        "org.nuget.serilog": "4.3.0",
+        "org.nuget.serilog.extensions.logging": "10.0.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.serilog.extensions.logging": {
-      "version": "9.0.0",
+      "version": "10.0.0",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.logging": "9.0.0",
+        "org.nuget.microsoft.extensions.logging": "10.0.0",
         "org.nuget.serilog": "4.2.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.serilog.settings.configuration": {
-      "version": "9.0.0",
+      "version": "10.0.0",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.extensions.configuration.binder": "9.0.0",
-        "org.nuget.microsoft.extensions.dependencymodel": "9.0.0",
-        "org.nuget.serilog": "4.2.0"
+        "org.nuget.microsoft.extensions.configuration.binder": "10.0.0",
+        "org.nuget.microsoft.extensions.dependencymodel": "10.0.0",
+        "org.nuget.serilog": "4.3.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
@@ -2105,29 +2268,26 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.sharpyaml": {
-      "version": "2.1.2",
-      "depth": 2,
+      "version": "3.5.0",
+      "depth": 3,
       "source": "registry",
-      "dependencies": {},
+      "dependencies": {
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.collections.immutable": "9.0.0",
+        "org.nuget.system.text.json": "10.0.3"
+      },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.buffers": {
-      "version": "4.6.0",
-      "depth": 7,
+      "version": "4.6.1",
+      "depth": 4,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
-    "org.nuget.system.componentmodel.annotations": {
-      "version": "5.0.0",
-      "depth": 5,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://unitynuget-registry.openupm.com"
-    },
-    "org.nuget.system.diagnostics.diagnosticsource": {
-      "version": "9.0.5",
-      "depth": 6,
+    "org.nuget.system.collections.immutable": {
+      "version": "9.0.0",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.memory": "4.5.5",
@@ -2135,9 +2295,26 @@
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
+    "org.nuget.system.componentmodel.annotations": {
+      "version": "5.0.0",
+      "depth": 4,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://unitynuget-registry.openupm.com"
+    },
+    "org.nuget.system.diagnostics.diagnosticsource": {
+      "version": "10.0.5",
+      "depth": 4,
+      "source": "registry",
+      "dependencies": {
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
+      },
+      "url": "https://unitynuget-registry.openupm.com"
+    },
     "org.nuget.system.diagnostics.eventlog": {
-      "version": "9.0.5",
-      "depth": 7,
+      "version": "10.0.5",
+      "depth": 5,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.security.principal.windows": "5.0.0"
@@ -2145,18 +2322,18 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.io.abstractions": {
-      "version": "22.0.14",
+      "version": "22.1.0",
       "depth": 5,
       "source": "registry",
       "dependencies": {
-        "org.nuget.testableio.system.io.abstractions.wrappers": "22.0.14",
-        "org.nuget.testableio.system.io.abstractions": "22.0.14"
+        "org.nuget.testableio.system.io.abstractions.wrappers": "22.1.0",
+        "org.nuget.testableio.system.io.abstractions": "22.1.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.io.filesystem.accesscontrol": {
       "version": "5.0.0",
-      "depth": 5,
+      "depth": 4,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.buffers": "4.5.1",
@@ -2167,41 +2344,41 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.io.pipelines": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.buffers": "4.5.1",
-        "org.nuget.system.memory": "4.5.5",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.memory": {
-      "version": "4.6.0",
-      "depth": 6,
+      "version": "4.6.3",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.buffers": "4.6.0",
-        "org.nuget.system.numerics.vectors": "4.6.0",
-        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.0"
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.numerics.vectors": "4.6.1",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.net.serversentevents": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 7,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.system.memory": "4.5.5",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.numerics.vectors": {
-      "version": "4.6.0",
-      "depth": 7,
+      "version": "4.6.1",
+      "depth": 5,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
@@ -2239,15 +2416,15 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.runtime.compilerservices.unsafe": {
-      "version": "6.1.0",
-      "depth": 6,
+      "version": "6.1.2",
+      "depth": 4,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.security.accesscontrol": {
       "version": "6.0.1",
-      "depth": 4,
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.security.principal.windows": "5.0.0"
@@ -2256,20 +2433,20 @@
     },
     "org.nuget.system.security.cryptography.cng": {
       "version": "4.5.0",
-      "depth": 7,
+      "depth": 5,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.security.principal.windows": {
       "version": "5.0.0",
-      "depth": 5,
+      "depth": 4,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.servicemodel.primitives": {
-      "version": "8.1.2",
+      "version": "10.0.652802",
       "depth": 6,
       "source": "registry",
       "dependencies": {
@@ -2278,47 +2455,47 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.text.encodings.web": {
-      "version": "9.0.5",
-      "depth": 5,
+      "version": "10.0.5",
+      "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.buffers": "4.5.1",
-        "org.nuget.system.memory": "4.5.5",
-        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0"
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.text.json": {
-      "version": "9.0.5",
-      "depth": 4,
+      "version": "10.0.5",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.system.io.pipelines": "9.0.5",
-        "org.nuget.system.text.encodings.web": "9.0.5",
-        "org.nuget.system.buffers": "4.5.1",
-        "org.nuget.system.memory": "4.5.5",
-        "org.nuget.system.runtime.compilerservices.unsafe": "6.0.0",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.system.io.pipelines": "10.0.5",
+        "org.nuget.system.text.encodings.web": "10.0.5",
+        "org.nuget.system.buffers": "4.6.1",
+        "org.nuget.system.memory": "4.6.3",
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.threading.channels": {
-      "version": "9.0.5",
+      "version": "10.0.5",
       "depth": 7,
       "source": "registry",
       "dependencies": {
-        "org.nuget.microsoft.bcl.asyncinterfaces": "9.0.5",
-        "org.nuget.system.threading.tasks.extensions": "4.5.4"
+        "org.nuget.microsoft.bcl.asyncinterfaces": "10.0.5",
+        "org.nuget.system.threading.tasks.extensions": "4.6.3"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.system.threading.tasks.extensions": {
-      "version": "4.5.4",
+      "version": "4.6.3",
       "depth": 4,
       "source": "registry",
       "dependencies": {
-        "org.nuget.system.runtime.compilerservices.unsafe": "4.5.3"
+        "org.nuget.system.runtime.compilerservices.unsafe": "6.1.2"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
@@ -2330,27 +2507,27 @@
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.testableio.system.io.abstractions": {
-      "version": "22.0.14",
-      "depth": 4,
+      "version": "22.1.0",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
-        "org.nuget.testably.abstractions.filesystem.interface": "9.0.0"
+        "org.nuget.testably.abstractions.filesystem.interface": "10.0.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.testableio.system.io.abstractions.wrappers": {
-      "version": "22.0.14",
-      "depth": 4,
+      "version": "22.1.0",
+      "depth": 3,
       "source": "registry",
       "dependencies": {
         "org.nuget.system.io.filesystem.accesscontrol": "5.0.0",
-        "org.nuget.testably.abstractions.filesystem.interface": "9.0.0"
+        "org.nuget.testably.abstractions.filesystem.interface": "10.0.0"
       },
       "url": "https://unitynuget-registry.openupm.com"
     },
     "org.nuget.testably.abstractions.filesystem.interface": {
-      "version": "9.0.0",
-      "depth": 5,
+      "version": "10.0.0",
+      "depth": 4,
       "source": "registry",
       "dependencies": {},
       "url": "https://unitynuget-registry.openupm.com"

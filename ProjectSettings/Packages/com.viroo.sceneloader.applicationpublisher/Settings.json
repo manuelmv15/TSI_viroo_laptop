@@ -2,7 +2,7 @@
     "m_Dictionary": {
         "m_DictionaryValues": [
             {
-                "type": "Viroo.SceneLoader.ApplicationPublisher.Editor.ApplicationSceneBuilderItemData[], Viroo.SceneLoader.ApplicationPublisher.Editor, Version=3.0.522.0, Culture=neutral, PublicKeyToken=null",
+                "type": "Viroo.SceneLoader.ApplicationPublisher.Editor.ApplicationSceneBuilderItemData[], Viroo.SceneLoader.ApplicationPublisher.Editor, Version=3.1.254.0, Culture=neutral, PublicKeyToken=null",
                 "key": "items",
                 "value": "{\"m_Value\":[{\"identifier\":\"6361e979-b333-4b13-b843-c7ea39ff96cd\",\"title\":\"Demo\",\"thumbnail\":{\"instanceID\":0},\"sceneAsset\":{\"fileID\":102900000,\"guid\":\"4b6a039f17b01cd488d824e355f0d406\",\"type\":3},\"enabled\":true}]}"
             },
