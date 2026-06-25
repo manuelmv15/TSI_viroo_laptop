@@ -12,7 +12,6 @@ public class AssemblyManager : MonoBehaviour
     [SerializeField] private List<InteractableComponent> piezas = new List<InteractableComponent>();
     [SerializeField] private TextMeshProUGUI txtProgreso;
     [SerializeField] private TextMeshProUGUI txtInstruccion;
-    [SerializeField] private QuizManager quizManager;
 
     public UnityEvent OnAssemblyComplete = new UnityEvent();
 
@@ -39,8 +38,6 @@ public class AssemblyManager : MonoBehaviour
             if (compContainer != null)
                 piezas.AddRange(compContainer.GetComponentsInChildren<InteractableComponent>());
         }
-        if (quizManager == null)
-            quizManager = FindFirstObjectByType<QuizManager>();
 
         if (txtProgreso == null || txtInstruccion == null)
         {
@@ -63,9 +60,6 @@ public class AssemblyManager : MonoBehaviour
     {
         foreach (var slot in slots)
             slot.OnComponentInstalled.AddListener(OnPiezaInstalada);
-
-        if (quizManager != null)
-            OnAssemblyComplete.AddListener(quizManager.IniciarQuiz);
 
         ActualizarUI();
         ResaltarSiguiente();
